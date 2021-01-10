@@ -1,0 +1,21 @@
+{
+  "name": "workspaces",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-wasm": "wasm-pack build wasm/test-wasm --out-dir ../../packages/test-wasm --target nodejs && wasm-pack build wasm/test-wasm-browser --out-dir ../../packages/test-wasm-browser",
+    "build": "lerna run build --ignore=www",
+    "dev": "lerna run dev --include-dependencies --scope=www --stream"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
