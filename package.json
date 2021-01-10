@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "publish": "lerna run publish --ignore=www",
     "build": "lerna run build --ignore=www",
+    "build:nextjs": "lerna run build --scope=www",
     "dev": "lerna run dev --include-dependencies --scope=www --stream"
   },
   "keywords": [],

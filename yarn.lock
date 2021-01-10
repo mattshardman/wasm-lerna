@@ -1853,6 +1853,11 @@
     npmlog "^4.1.2"
     write-file-atomic "^2.3.0"
 
+"@mattmattnpm/test-wasm@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@mattmattnpm/test-wasm/-/test-wasm-0.1.1.tgz#d6c57686cb76f37c76e85ae14b492934fe8242ae"
+  integrity sha512-1xssYBpdYvrXia0yjX1IniAK7qs5w0+aZXT4RDOO7/MZP9x4AUB/srs72Pp4DfqsOWvdYKfx/w74/nYF6S14kw==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -2046,6 +2051,11 @@
   version "14.14.14"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.14.tgz#f7fd5f3cc8521301119f63910f0fb965c7d761ae"
   integrity sha512-UHnOPWVWV1z+VV8k6L1HhG7UbGBgIdghqF3l9Ny9ApPghbjICXkUJSd/b9gOgQfjM1r+37cipdw/HJ3F6ICEnQ==
+
+"@types/node@^14.14.20":
+  version "14.14.20"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.20.tgz#f7974863edd21d1f8a494a73e8e2b3658615c340"
+  integrity sha512-Y93R97Ouif9JEOWPIUyU+eyIdyRqQR0I8Ez1dzku4hDx34NWh4HbtIc3WNzwB1Y9ULvNGeu5B8h8bVL5cAk4/A==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"

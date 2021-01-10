@@ -9,7 +9,7 @@ const Home = () => {
   const [text, setText] = React.useState<string>();
 
   const importWasm = async () => {
-    const wasmFns = await import("@mh/test-wasm-browser");
+    const wasmFns = await import("@mattmattnpm/test-wasm-browser");
     setWasm(wasmFns);
   };
 
