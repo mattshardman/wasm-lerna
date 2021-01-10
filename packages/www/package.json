@@ -1,6 +1,6 @@
 {
   "name": "www",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@mattmattnpm/test-wasm": "^0.1.1",
-    "@mattmattnpm/test-wasm-browser": "^0.1.0",
+    "@mattmattnpm/test-wasm-browser": "^0.1.2",
     "next": "10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1"
