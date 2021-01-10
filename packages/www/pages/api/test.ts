@@ -4,7 +4,7 @@ import { useWasm } from "../../utils";
 const handler = async (_req: NextApiRequest, res: NextApiResponse) => {
     const wasm = await useWasm();
     const result = wasm.greet();
-    res.send(result);
+    res.send({ text: result });
 }
 
 export default handler;

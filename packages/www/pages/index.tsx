@@ -9,13 +9,21 @@ const Home = () => {
   const [text, setText] = React.useState<string>();
 
   const importWasm = async () => {
-    const wasmFns = await import("test-wasm-browser/dist");
+    const wasmFns = await import("@mh/test-wasm-browser");
     setWasm(wasmFns);
   };
 
-  const handleClick = () => {
-    const word = wasm.greet();
-    setText(word);
+  const handleClick = async (input: string) => {
+    if (input === "browser") {
+      const word = wasm.greet();
+      setText(word);
+    }
+
+    if (input === "api") {
+      const res = await fetch("/api/test");
+      const json = await res.json();
+      setText(json.text);
+    }
   };
 
   React.useEffect(() => {
@@ -25,7 +33,9 @@ const Home = () => {
   return (
     <div>
       {text}
-      <button onClick={handleClick}>Click</button>
+      <button onClick={() => handleClick("browser")}>Browser wasm</button>
+      <button onClick={() => handleClick("api")}>Wasm</button>
+
     </div>
   );
 };
